@@ -208,6 +208,11 @@
 	// Setting this to blank uses PHP logging (usually to http server 
 	// error.log).
 
+	define('_CURL_HTTP_PROXY', '');
+	// Use proxy to fetch feeds and to cache images, examples:
+	// define('_CURL_HTTP_PROXY', '127.0.0.1:8118'); // Use HTTP proxy
+	// define('_CURL_HTTP_PROXY', 'socks5://127.0.0.1:9050'); // Use SOCKS5 proxy (For exmaple Tor)
+
 	define('CONFIG_VERSION', 26);
 	// Expected config version. Please update this option in config.php
 	// if necessary (after migrating all new options from this file).
